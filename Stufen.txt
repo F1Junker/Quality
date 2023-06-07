@@ -1,0 +1,15 @@
+Standard:
+
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42
+
+Stufe 1: 40%
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42 --learning_rate 0.001 --batch_size 256 --weight_decay 0.001
+
+Stufe 2: 35%
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42 --learning_rate 0.001 --batch_size 64 --weight_decay 0.0001
+
+Stufe 3: 30%
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42 --learning_rate 0.01 --batch_size 64 --weight_decay 0.0001
+
+Stufe 4: 25%
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42 --learning_rate 0.001 --batch_size 64 --weight_decay 0.01

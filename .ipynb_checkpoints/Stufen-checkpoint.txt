@@ -1,0 +1,3 @@
+Standard:
+
+python train.py --dataset_dir /home/fjunker/F/kernel_pattern_reg_v3  --checkpoints best --model lowres_resnet18  --dataset cifar100 --max_epochs 120 --scheduler frankle_step --seed 42
